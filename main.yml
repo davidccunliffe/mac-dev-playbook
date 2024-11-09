@@ -25,6 +25,23 @@
     - role: geerlingguy.mac.dock
       when: configure_dock
       tags: ['dock']
+    - role: osx_provisioner.collection.asdf
+      vars:
+        asdf_plugins:
+        - name: "python"
+          versions: "3.13.0"
+        - name: "go"
+          versions: ["1.7.3", "1.9.8"]
+          global: "1.9.3"
+        - name: "rust"
+          versions: ["1.7.3", "1.9.8"]
+          global: "1.9.3"
+        - name: "awscli"
+          versions: ["latest:2"]
+          global: "latest:2"
+        - name: "terraform"
+          versions: ["1.7.3", "1.9.8"]
+          global: "1.9.3"
 
   tasks:
     - import_tasks: tasks/sudoers.yml

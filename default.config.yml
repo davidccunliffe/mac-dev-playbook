@@ -58,11 +58,15 @@ homebrew_installed_packages:
   - nvm
   - ssh-copy-id
   - spectacles
+  - sqlite3
+  - tcl-tk
   - readline
   - openssl
   - pv
   - wget
   - wrk
+  - xz
+  - zlib
   - zsh
   - zsh-history-substring-search
 
