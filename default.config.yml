@@ -108,5 +108,48 @@ pip_packages: []
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
 
+asdf_user: "{{ lookup('env', 'USER') }}"
+asdf_user_home: "{{ lookup('env', 'HOME') }}"
+asdf_homebrew_retries: 3
+asdf_plugins:
+  - name: "golang"
+    repository: ""
+    versions:
+      - 1.18.10
+    global: 1.18.10
+  - name: "helm"
+    repository: ""
+    versions:
+      - 3.11.0
+    global: 3.11.0
+  - name: "kubectl"
+    repository: ""
+    versions:
+      - 1.25.6
+    global: 1.25.6
+  - name: "minikube"
+    repository: ""
+    versions:
+      - 1.28.0
+    global: 1.28.0
+  - name: "python"
+    repository: ""
+    versions:
+      - 2.7.18
+      - 3.7.16
+      - 3.8.16
+      - 3.9.16
+    global: 3.9.16
+  - name: "terraform"
+    repository: ""
+    versions:
+      - 0.11.14
+      - 0.12.29
+      - 0.13.0
+      - 0.14.0
+      - 1.7.3
+      - 1.9.3
+    global: 1.9.3
+
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
