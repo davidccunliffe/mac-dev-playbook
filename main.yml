@@ -30,18 +30,21 @@
         asdf_plugins:
         - name: "python"
           versions: "3.13.0"
-        - name: "go"
+        - name: "golang"
           versions: ["1.7.3", "1.9.8"]
           global: "1.9.3"
         - name: "rust"
-          versions: ["1.7.3", "1.9.8"]
-          global: "1.9.3"
+          versions: ["1.8.2"]
+          global: "1.8.2"
         - name: "awscli"
           versions: ["latest:2"]
           global: "latest:2"
         - name: "terraform"
           versions: ["1.7.3", "1.9.8"]
           global: "1.9.3"
+        - name: "direnv"
+          versions: ["2.35.0"]
+          global: "2.35.0"
 
   tasks:
     - import_tasks: tasks/sudoers.yml
