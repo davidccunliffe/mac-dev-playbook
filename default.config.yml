@@ -36,6 +36,7 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - 1password
   - 1password-cli
+  - asdf
   - awscli
   - autoconf
   - bash-completion
@@ -62,6 +63,7 @@ homebrew_installed_packages:
   - pv
   - wget
   - wrk
+  - zsh
   - zsh-history-substring-search
 
 homebrew_taps: []
