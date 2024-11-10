@@ -143,10 +143,6 @@ asdf_plugins:
   - name: "terraform"
     repository: ""
     versions:
-      - 0.11.14
-      - 0.12.29
-      - 0.13.0
-      - 0.14.0
       - 1.7.3
       - 1.9.3
     global: 1.9.3
