@@ -11,9 +11,6 @@ dockitems_remove: []
 # - Podcasts
 # - 'App Store'
 dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -37,7 +34,10 @@ homebrew_installed_packages:
   - 1password
   - 1password-cli
   - asdf
+  - direnv
   - awscli
+  - bat
+  - google-cloud-sdk
   - autoconf
   - bash-completion
   - cowsay
@@ -71,6 +71,7 @@ homebrew_installed_packages:
   - zsh-history-substring-search
 
 homebrew_taps: []
+  - homebrew/bundle
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -112,6 +113,12 @@ asdf_user: "{{ lookup('env', 'USER') }}"
 asdf_user_home: "{{ lookup('env', 'HOME') }}"
 asdf_homebrew_retries: 3
 asdf_plugins:
+  - name: "direnv"
+    repository: ""
+    versions:
+      - 1.7.3
+      - 1.9.3
+    global: 1.9.3
   - name: "golang"
     repository: ""
     versions:
