@@ -26,25 +26,7 @@
       when: configure_dock
       tags: ['dock']
     - role: osx_provisioner.collection.asdf
-      # vars:
-      #   asdf_plugins:
-      #   - name: "python"
-      #     versions: "3.13.0"
-      #   - name: "golang"
-      #     versions: ["1.7.3", "1.9.8"]
-      #     global: "1.9.3"
-      #   - name: "rust"
-      #     versions: ["1.8.2"]
-      #     global: "1.8.2"
-      #   - name: "awscli"
-      #     versions: ["latest:2"]
-      #     global: "latest:2"
-      #   - name: "terraform"
-      #     versions: ["1.7.3", "1.9.8"]
-      #     global: "1.9.3"
-      #   - name: "direnv"
-      #     versions: ["2.35.0"]
-      #     global: "2.35.0"
+      tags: ['asdf']
 
   tasks:
     - import_tasks: tasks/sudoers.yml
