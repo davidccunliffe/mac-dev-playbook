@@ -31,13 +31,13 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - 1password
-  - 1password-cli
+  # - 1password # Installs but fails and doesn't show up in brew
+  # - 1password-cli # Installs but fails and doesn't show up in brew
   - asdf
   - direnv
   - awscli
   - bat
-  - google-cloud-sdk
+  # - google-cloud-sdk # Installs but fails and doesn't show up in brew
   - autoconf
   - bash-completion
   - cowsay
@@ -49,10 +49,10 @@ homebrew_installed_packages:
   - go
   - gpg
   - httpie
-  - iterm2
+  # - iterm2 # Installs but fails
   - iperf
   - libevent
-  - timeout
+  # - timeout # Installs but fails
   - tree
   - node
   - nvm
@@ -115,9 +115,8 @@ asdf_plugins:
   - name: "direnv"
     repository: ""
     versions:
-      - 1.7.3
-      - 1.9.3
-    global: 1.9.3
+      - 2.35.0
+    global: 2.35.0
   - name: "golang"
     repository: ""
     versions:
